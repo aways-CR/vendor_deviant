@@ -131,11 +131,11 @@ PRODUCT_PACKAGES += \
     DeviantPapers \
     DSPManager \
     FileManager \
-    HoloLauncherHD \
     LatinIME \
     libcyanogen-dsp \
     LockClock \
-    PerformanceControl
+    PerformanceControl \
+    Trebuchet
 
 # Extra tools
 PRODUCT_PACKAGES += \
