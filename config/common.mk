@@ -12,70 +12,70 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/slim/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/slim/prebuilt/common/bin/50-slim.sh:system/addon.d/50-slim.sh
+    vendor/deviant/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/deviant/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/deviant/prebuilt/common/bin/50-slim.sh:system/addon.d/50-slim.sh
 
-# SLIM-specific init file
+# DEVIANT-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/init.local.rc:root/init.slim.rc
+    vendor/deviant/prebuilt/common/etc/init.local.rc:root/init.slim.rc
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/deviant/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/slim/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+    vendor/deviant/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/deviant/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
 # Audio Config for DSPManager
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
+    vendor/deviant/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Bring in media files
 PRODUCT_COPY_FILES +=  \
-    vendor/slim/prebuilt/common/media/audio/alarms/Alarm_Classic.ogg:system/media/audio/alarms/Alarm_Classic.ogg \
-    vendor/slim/prebuilt/common/media/audio/alarms/Alarm_Rooster_02.ogg:system/media/audio/alarms/Alarm_Rooster_02.ogg \
-    vendor/slim/prebuilt/common/media/audio/alarms/Cesium.ogg:system/media/audio/alarms/Cesium.ogg \
-    vendor/slim/prebuilt/common/media/audio/alarms/Alarm_Beep_02.ogg:system/media/audio/alarms/Alarm_Beep_02.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/NewPlayer.ogg:system/media/audio/ringtones/NewPlayer.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/Ring_Digital_02.ogg:system/media/audio/ringtones/Ring_Digital.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/Playa.ogg:system/media/audio/ringtones/Playa.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/Pyxis.ogg:system/media/audio/ringtones/Pyxis.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/Vespa.ogg:system/media/audio/ringtones/Vespa.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/hydra.ogg:system/media/audio/ringtones/hydra.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/Aquila.ogg:system/media/audio/ringtones/Aquila.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/World.ogg:system/media/audio/ringtones/World.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/InsertCoin.ogg:system/media/audio/ringtones/InsertCoin.ogg \
-    vendor/slim/prebuilt/common/media/audio/ringtones/Carina.ogg:system/media/audio/ringtones/Carina.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Antares.ogg:system/media/audio/notifications/Antares.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Doink.ogg:system/media/audio/notifications/Doink.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/arcturus.ogg:system/media/audio/notifications/arcturus.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Plastic_Pipe.ogg:system/media/audio/notifications/Plastic_Pipe.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Procyon.ogg:system/media/audio/notifications/Procyon.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/pixiedust.ogg:system/media/audio/notifications/pixiedust.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/DontPanic.ogg:system/media/audio/notifications/DontPanic.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Palladium.ogg:system/media/audio/notifications/Palladium.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/tweeters.ogg:system/media/audio/notifications/tweeters.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Cricket.ogg:system/media/audio/notifications/Cricket.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Altair.ogg:system/media/audio/notifications/Altair.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Helium.ogg:system/media/audio/notifications/Helium.ogg \
-    vendor/slim/prebuilt/common/media/audio/notifications/Aldebaran.ogg:system/media/audio/notifications/Aldebaran.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/Undock.ogg:system/media/audio/ui/Undock.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/VideoRecord.ogg:system/media/audio/ui/VideoRecord.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/KeypressReturn.ogg:system/media/audio/ui/KeypressReturn.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/camera_focus.ogg:system/media/audio/ui/camera_focus.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/KeypressDelete.ogg:system/media/audio/ui/KeypressDelete.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/Dock.ogg:system/media/audio/ui/Dock.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/Lock.ogg:system/media/audio/ui/Lock.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/KeypressStandard.ogg:system/media/audio/ui/KeypressStandard.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/Effect_Tick.ogg:system/media/audio/ui/Effect_Tick.ogg \
-    vendor/slim/prebuilt/common/media/audio/ui/KeypressSpacebar.ogg:system/media/audio/ui/KeypressSpacebar.ogg
-#LOCAL SLIM CHANGES  - END
+    vendor/deviant/prebuilt/common/media/audio/alarms/Alarm_Classic.ogg:system/media/audio/alarms/Alarm_Classic.ogg \
+    vendor/deviant/prebuilt/common/media/audio/alarms/Alarm_Rooster_02.ogg:system/media/audio/alarms/Alarm_Rooster_02.ogg \
+    vendor/deviant/prebuilt/common/media/audio/alarms/Cesium.ogg:system/media/audio/alarms/Cesium.ogg \
+    vendor/deviant/prebuilt/common/media/audio/alarms/Alarm_Beep_02.ogg:system/media/audio/alarms/Alarm_Beep_02.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/NewPlayer.ogg:system/media/audio/ringtones/NewPlayer.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/Ring_Digital_02.ogg:system/media/audio/ringtones/Ring_Digital.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/Playa.ogg:system/media/audio/ringtones/Playa.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/Pyxis.ogg:system/media/audio/ringtones/Pyxis.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/Vespa.ogg:system/media/audio/ringtones/Vespa.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/hydra.ogg:system/media/audio/ringtones/hydra.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/Aquila.ogg:system/media/audio/ringtones/Aquila.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/World.ogg:system/media/audio/ringtones/World.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/InsertCoin.ogg:system/media/audio/ringtones/InsertCoin.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ringtones/Carina.ogg:system/media/audio/ringtones/Carina.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Antares.ogg:system/media/audio/notifications/Antares.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Doink.ogg:system/media/audio/notifications/Doink.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/arcturus.ogg:system/media/audio/notifications/arcturus.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Plastic_Pipe.ogg:system/media/audio/notifications/Plastic_Pipe.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Procyon.ogg:system/media/audio/notifications/Procyon.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/pixiedust.ogg:system/media/audio/notifications/pixiedust.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/DontPanic.ogg:system/media/audio/notifications/DontPanic.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Palladium.ogg:system/media/audio/notifications/Palladium.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/tweeters.ogg:system/media/audio/notifications/tweeters.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Cricket.ogg:system/media/audio/notifications/Cricket.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Altair.ogg:system/media/audio/notifications/Altair.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Helium.ogg:system/media/audio/notifications/Helium.ogg \
+    vendor/deviant/prebuilt/common/media/audio/notifications/Aldebaran.ogg:system/media/audio/notifications/Aldebaran.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/Undock.ogg:system/media/audio/ui/Undock.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/VideoRecord.ogg:system/media/audio/ui/VideoRecord.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/KeypressReturn.ogg:system/media/audio/ui/KeypressReturn.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/camera_focus.ogg:system/media/audio/ui/camera_focus.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/KeypressDelete.ogg:system/media/audio/ui/KeypressDelete.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/Dock.ogg:system/media/audio/ui/Dock.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/Lock.ogg:system/media/audio/ui/Lock.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/KeypressStandard.ogg:system/media/audio/ui/KeypressStandard.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/Effect_Tick.ogg:system/media/audio/ui/Effect_Tick.ogg \
+    vendor/deviant/prebuilt/common/media/audio/ui/KeypressSpacebar.ogg:system/media/audio/ui/KeypressSpacebar.ogg
+#LOCAL deviant CHANGES  - END
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -83,25 +83,25 @@ PRODUCT_COPY_FILES += \
 
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
-    vendor/slim/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
+    vendor/deviant/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
+    vendor/deviant/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/init.d/00slim:system/etc/init.d/00slim \
-    vendor/slim/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
-    vendor/slim/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/slim/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/slim/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
-    vendor/slim/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/deviant/prebuilt/common/etc/init.d/00slim:system/etc/init.d/00slim \
+    vendor/deviant/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
+    vendor/deviant/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/deviant/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/deviant/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
+    vendor/deviant/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-    vendor/slim/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-    vendor/slim/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-    vendor/slim/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-    vendor/slim/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-    vendor/slim/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-    vendor/slim/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
+    vendor/deviant/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/deviant/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+    vendor/deviant/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/deviant/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+    vendor/deviant/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+    vendor/deviant/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+    vendor/deviant/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
@@ -144,11 +144,11 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/slim/overlay/dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/slim/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/deviant/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/deviant/overlay/common
 
 # T-Mobile theme engine
-include vendor/slim/config/themes_common.mk
+include vendor/deviant/config/themes_common.mk
 
 # Versioning System
 PRODUCT_VERSION_MAJOR = 4.2.2
@@ -158,21 +158,21 @@ PRODUCT_VERSION_MAINTENANCE = 3.4
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JDQ39
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    slim.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)
+    deviant.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)
 
-ifdef SLIM_NIGHTLY
-    SLIM_VERSION := Slim-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-NIGHTLY-$(shell date +"%Y%m%d-%H%M")
-    SLIM_MOD_VERSION := Slim-$(PRODUCT_RELEASE_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-NIGHTLY-$(shell date +"%Y%m%d-%H%M")
+ifdef DEVIANT_NIGHTLY
+    DEVIANT_VERSION := Deviant-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-NIGHTLY-$(shell date +"%Y%m%d-%H%M")
+    DEVIANT_MOD_VERSION := Deviant-$(PRODUCT_RELEASE_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-NIGHTLY-$(shell date +"%Y%m%d-%H%M")
 else
-    ifdef SLIM_RELEASE
-        SLIM_VERSION := Slim-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
-        SLIM_MOD_VERSION := Slim-$(PRODUCT_RELEASE_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
+    ifdef DEVIANT_RELEASE
+        DEVIANT_VERSION := Deviant-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
+        DEVIANT_MOD_VERSION := Deviant-$(PRODUCT_RELEASE_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL
     else
-        SLIM_VERSION := Slim-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
-        SLIM_MOD_VERSION := Slim-$(PRODUCT_RELEASE_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
+        DEVIANT_VERSION := Deviant-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-OFFICIAL-$(shell date +"%Y%m%d-%H%M")
+        DEVIANT_MOD_VERSION := Deviant-$(PRODUCT_RELEASE_NAME)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-UNOFFICIAL-$(shell date +"%Y%m%d-%H%M")
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.slim.version=$(SLIM_VERSION) \
-    ro.modversion=$(SLIM_MOD_VERSION)
+    ro.deviant.version=$(DEVIANT_VERSION) \
+    ro.modversion=$(DEVIANT_MOD_VERSION)

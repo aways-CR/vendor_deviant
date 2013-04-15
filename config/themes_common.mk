@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
        ThemeManager \
        ThemeChooser \
-       com.tmobile.themes
+       com.tmobile.themes \
+       FileManagerThemes
 
 PRODUCT_COPY_FILES += \
-       vendor/slim/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/deviant/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
