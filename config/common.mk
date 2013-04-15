@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
     DeviantPapers \
     DSPManager \
     FileManager \
+    FileManagerTests \
     LatinIME \
     libcyanogen-dsp \
     LockClock \
