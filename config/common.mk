@@ -125,12 +125,17 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    HoloLauncherHD \
+    Apollo \
+    audio_effects.conf \
     DashClock \
-    SlimFileManager \
-    SlimCenter \
-    Velvet \
-    LatinIME
+    DeviantPapers \
+    DSPManager \
+    FileManager \
+    HoloLauncherHD \
+    LatinIME \
+    libcyanogen-dsp \
+    LockClock \
+    PerformanceControl
 
 # Extra tools
 PRODUCT_PACKAGES += \
