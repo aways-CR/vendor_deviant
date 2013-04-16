@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     Email \
-    Exchange \
+    Exchange2 \
     SpareParts \
     Superuser \
     su
