@@ -110,6 +110,8 @@ SUPERUSER_EMBEDDED := true
 PRODUCT_PACKAGES += \
     Camera \
     Development \
+    Email \
+    Exchange \
     SpareParts \
     Superuser \
     su
