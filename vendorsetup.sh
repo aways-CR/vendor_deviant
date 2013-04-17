@@ -1,6 +1,7 @@
 add_lunch_combo deviant_d2att-userdebug
 add_lunch_combo deviant_d2mtr-userdebug
 add_lunch_combo deviant_d2spr-userdebug
+add_lunch_combo deviant_d2usc-userdebug
 add_lunch_combo deviant_d2tmo-userdebug
 add_lunch_combo deviant_d2vzw-userdebug
 add_lunch_combo deviant_i777-userdebug
