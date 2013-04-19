@@ -110,7 +110,7 @@ SUPERUSER_EMBEDDED := true
 PRODUCT_PACKAGES += \
     Camera \
     Development \
-    Email \
+    Email2 \
     Exchange2 \
     SpareParts \
     Superuser \
@@ -129,7 +129,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Apollo \
     audio_effects.conf \
-    DashClock \
     DeviantPapers \
     DSPManager \
     FileManager \
