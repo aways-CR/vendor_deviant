@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     libcyanogen-dsp \
     LockClock \
-    PerformanceControl \
     Trebuchet
 
 # Extra tools
