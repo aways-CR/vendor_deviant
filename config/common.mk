@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     libcyanogen-dsp \
     LockClock \
+    PermissionsManager \
     Trebuchet \
     XposedDPI \
     XposedInstaller
