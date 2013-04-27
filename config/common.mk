@@ -128,5 +128,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.slim.version=$(DEVIANT_VERSION) \
+    ro.deviant.version=$(DEVIANT_VERSION) \
     ro.modversion=$(DEVIANT_MOD_VERSION)
